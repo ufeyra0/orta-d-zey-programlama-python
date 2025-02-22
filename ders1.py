@@ -40,3 +40,62 @@ try:
 
 except Exception as e:
     print(f"Hata = {e}")
+
+# (str işlemi): bir metin içerisindeki cümlede yer alan
+# Türkçe karakterleri İngilizce karşılığı ile değiştiren
+# kodu yazınız. (Örneğin, Cümlede ç harfi geçiyorsa c yazacak
+# Ç harfi geçiyorsa C yazacak)
+
+my_sentence = "Orta Çağ Döneminden beri farklı diller konuşulmaktadır. Üzücü olan şudur kİ bugün yaşadığımız tüm sıkıntıların bir sebebi de dillerin birer birer ölmesidir."
+
+print(f"Orijinal cümle = {my_sentence}")
+print("-"*50)
+
+my_sentence = my_sentence.replace("ç","c").replace("Ç","C").replace("ğ","g").replace("Ğ","G").replace("ı","i").replace("İ","I").replace("ö","o").replace("Ö","O").replace("ş","s").replace("Ş","S").replace("ü","u").replace("Ü","U")
+""
+print(f"İşlenmiş Cümle = {my_sentence}")
+
+my_sentence = "Orta Çağ Döneminden beri farklı diller konuşulmaktadır. Üzücü olan şudur kİ bugün yaşadığımız tüm sıkıntıların bir sebebi de dillerin birer birer ölmesidir."
+
+my_dictionary = {"isim":"Furkan","soyisim":"ATLAN","yas":31,
+                "dersler":["Orta Düzey Programlama, Python Programlama"]}
+
+print(f"Dictionary veri yapısının Tüm anahtarları (keys) = {my_dictionary.keys()}")
+print("-"*50)
+print(f"Dictionary veri yapısının Tüm değerleri (values) = {my_dictionary.values()}")
+print("-"*50)
+print(f"Dictionary veri yapısının anahtar ve değerleri = {my_dictionary.items()}")
+print("-"*50)
+print(f"Sadece isim anahtarının değeri = {my_dictionary['isim']}")
+
+my_sentence = "Orta Çağ Döneminden beri farklı diller konuşulmaktadır. Üzücü olan şudur kİ bugün yaşadığımız tüm sıkıntıların bir sebebi de dillerin birer birer ölmesidir."
+
+print(f"Cümlenin orijinal hali = {my_sentence}")
+
+turkish_to_english = {"Ç":"C","ğ":"g","ö":"o"}
+
+for turkish_character, english_character in turkish_to_english.items():
+    my_sentence = my_sentence.replace(turkish_character, english_character)
+
+print("-"*50)
+print(f"Cümlenin işlenmiş hali = {my_sentence}")
+
+# Girilen bir tamsayının kendisi haricinde tüm tam bölenlerini
+# bulan ve bunları bir listeye ekleyip; sonrasında for döngüsü ile
+# tek tek gösteren kodu yazınız. NOT: kaç adet tam böleni olduğu
+# bilgisini de yazdırınız
+
+my_num_1 = int(input("Lütfen tamsayı giriniz: "))
+
+bolenler = []
+sayac = 0
+
+for i in range(1,my_num_1):
+    if my_num_1%i==0:
+        bolenler.append(i)
+        sayac = sayac + 1
+        #sayac += 1 # yukarıdaki sayac kodu ile aynı işi yap
+
+print(f"{my_num_1} sayısının {sayac} adet tam böleni bulundu:")
+for i in bolenler:
+    print(i)
