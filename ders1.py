@@ -10,8 +10,6 @@ number_2 = input("Lütfen 2. sayıyı giriniz: ")
 # bir hata olması durumunda direkt hatayı bize gösteren
 # except blokunda da hatayı tanımlarız
 
-# "number_1/number_2" print ile ilk yazılan süslü parantez
-# number_1/number_2 ise print ile eşitlikten sonra yazdığımız süslü parentez
 #45+50 = 95
 # / sonucu = 50/5 = 10.0
 # // sonucu = 50/5 = int(10.0) = 10
