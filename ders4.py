@@ -41,7 +41,7 @@ count_char_lm = lambda str_degisken:len(str_degisken)
 
 print(f"Üfeyra Bağcı ismi {count_char_lm('Üfeyra Bağcı')} karakterden oluşur")
 
- Girilen bir str ifadenin KELİME SAYISINI hesaplayan lambda ve normal fonk.
+ #Girilen bir str ifadenin KELİME SAYISINI hesaplayan lambda ve normal fonk.
 # NOT: Üfeyra Bağcı yazdıldığında 2 değerini döndürecek
 
 def count_sentence(str_cumle):
